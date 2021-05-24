@@ -1,0 +1,110 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AssignmentOne
+</name>
+</assembly>
+<members>
+<member name="T:AssignmentOne.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:AssignmentOne.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:AssignmentOne.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:AssignmentOne.PrintJobCalculator">
+ <summary>
+ Form class for ordering print jobs
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.btnTest_Click(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that tests this list view stuff - MUST READ THE FORM SELECTIONS FIRST! ADD TO AN ARRAY THAT HOLDS ITEMS
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.btnClearJob_Click(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that handles the clear job button and recalculates the total
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.calculateTotal">
+ <summary>
+ Function that calculates the total whenever called and updates the label field
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.chbContract_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that handles the contract checkbox and adjusts prices accordingly
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.chbPriority_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that handles the priority checkbox and adjusts prices accordingly
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.closingEvent(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ Subroutine that ensures all forms close when this one is closed
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrintJobCalculator.calculatePrice(System.String@,System.String,System.String)">
+ <summary>
+ Function that calculates the price of an item based off its type, material and size
+ </summary>
+ <param name="type">Type of print job</param>
+ <param name="material">Material used if applicable ("" if not)</param>
+ <param name="size">Size of print job</param>
+ <returns>A Double for the price</returns>
+</member>
+<member name="T:AssignmentOne.MainForm">
+ <summary>
+ Initial form class that begins the invoice process
+ </summary>
+</member>
+<member name="M:AssignmentOne.MainForm.btnPrinterPurchase_Click(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that navigates to the printer purchase form
+ </summary>
+</member>
+<member name="M:AssignmentOne.MainForm.btnPrintRequest_Click(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine that navigates to the print request order form
+ </summary>
+</member>
+<member name="T:AssignmentOne.PrinterOrder">
+ <summary>
+ Form class for ordering 3D printers
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrinterOrder.baseModelTextbox_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine to handle textbox change for the base model to update the total
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrinterOrder.highEndModelTextBox_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Subroutine to handle textbox change for the base model to update the total
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrinterOrder.updateTotal">
+ <summary>
+ Subroutine to update the total when run
+ </summary>
+</member>
+<member name="M:AssignmentOne.PrinterOrder.closingEvent(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ Subroutine that ensures all forms close when this one is closed
+ </summary>
+</member>
+</members>
+</doc>
